@@ -1,6 +1,8 @@
+import '../styles/Calculator.css'
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import { Container, Row, Col } from 'react-bootstrap';
+import CalculatorButton from './CalculatorButton';
 
 class Calculator extends React.Component {
     render() {
@@ -10,29 +12,44 @@ class Calculator extends React.Component {
                     <h1>Calculator App</h1>
                 </Row>
                 <Row>
-                    <Col lg={12}>
-                        <Button>7</Button>
-                        <Button>8</Button>
-                        <Button>9</Button>
-                    </Col>
+                    <CalculatorButton name={"1"}/>
                 </Row>
                 <Row>
                     <Col lg={12}>
-                        <Button>4</Button>
-                        <Button>5</Button>
-                        <Button>6</Button>
+                        <input type="textbox"></input>
                     </Col>
                 </Row>
                 <Row>
-                    <Col lg={12}>
-                        <Button>1</Button>
-                        <Button>2</Button>
-                        <Button>3</Button>
+                    <Col md={4}>
+                        <CalculatorButton name={"7"}/>
+                    </Col>
+                    <Col md={4}>
+                        <CalculatorButton name={"8"}/>
+                    </Col>
+                    <Col md={4}>
+                        <CalculatorButton name={"9"}/>
                     </Col>
                 </Row>
                 <Row>
-                    <Col lg={12}>
-                        <Button>0</Button>
+                    <Col md={4}>
+                        <CalculatorButton name={"4"}/>
+                    </Col>
+                    <Col md={4}>
+                        <CalculatorButton name={"5"}/>
+                    </Col>
+                    <Col md={4}>
+                        <CalculatorButton name={"6"}/>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={4}>
+                        <CalculatorButton name={"3"}/>
+                    </Col>
+                    <Col md={4}>
+                        <CalculatorButton name={"2"}/>
+                    </Col>
+                    <Col md={4}>
+                        <CalculatorButton name={"1"}/>
                     </Col>
                 </Row>
             </Container>
